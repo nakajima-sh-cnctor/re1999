@@ -12,10 +12,16 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "@nuxt/eslint": "^0.7.4",
     "eslint": "^9.17.0",
     "nuxt": "^3.14.1592",
+    "sass": "^1.83.0",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "vite-plugin-vuetify": "^2.0.4",
+    "vuetify": "^3.7.6"
   }
 }

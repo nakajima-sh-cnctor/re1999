@@ -44,6 +44,9 @@ export default withNuxt([
     rules: {
       'no-console': 'error',                   // 本番環境ではconsole.logを禁止
       '@typescript-eslint/no-explicit-any': 'error',           // any型の使用を禁止
+      '@typescript-eslint/explicit-function-return-type': 'error', // 関数の戻り値の型を明示的に指定
+      '@typescript-eslint/no-unused-vars': 'error',            // 未使用の変数をエラーとして報告
+      '@typescript-eslint/consistent-type-definitions': ['error', 'interface'], // 型定義に一貫性を強制
     },
   },
 ]);

@@ -9,7 +9,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
@@ -21,8 +23,22 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "@nuxtjs/storybook": "^8.3.3",
+    "@storybook/addon-essentials": "^8.5.0",
+    "@storybook/addon-interactions": "^8.5.0",
+    "@storybook/blocks": "^8.5.0",
+    "@storybook/test": "^8.5.0",
+    "@storybook/vue3": "^8.5.0",
     "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "eslint-plugin-storybook": "^0.11.2",
+    "storybook": "^8.5.0",
     "vite-plugin-vuetify": "^2.0.4",
     "vuetify": "^3.7.6"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }
